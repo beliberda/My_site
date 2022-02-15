@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+.main {
+  margin: 0 auto;
+  max-width: 1280px;
+  max-height: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f194f;
+  animation: rotate 1100s linear infinite;
+}
+.main__background {
+  width: 1800px;
+  height: 1800px;
+  z-index: 0;
+}
+
+.body {
+  background-color: #0f194f;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.main__planet {
+  // display: none;
+  position: absolute;
+  top: 271px;
+  left: -70px;
+}
+.planet {
+  position: absolute;
+  filter: drop-shadow(-4px 4px 10px rgba(255, 255, 255, 0.75));
+  z-index: 1;
+  max-width: 74px;
+  max-height: 74px;
+}
+.planet_1 {
+  left: 519px;
+  top: 517px;
+}
+
+.planet_2 {
+  left: 467px;
+  top: 278px;
+}
+.planet_3 {
+  left: 798px;
+  top: 619px;
+}
+.planet_4 {
+  left: 744px;
+  top: 179px;
+}
+.planet_5 {
+  left: 834px;
+  top: 427px;
+}
+
+.main__line-item {
+  position: absolute;
+  color: white;
+
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  animation: linerotate 1100s linear infinite;
+}
+@keyframes linerotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.games {
+  top: 409px;
+  left: 717px;
+}
+.book {
+  top: 498px;
+  left: 424px;
+}
+.project {
+  top: 731px;
+  left: 483px;
+  transform: scale(-1, 1);
+}
+.about {
+  top: 849px;
+  left: 766px;
+}
+.memes {
+  top: 651px;
+  left: 795px;
+}
